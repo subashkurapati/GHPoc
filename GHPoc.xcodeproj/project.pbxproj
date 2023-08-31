@@ -14,19 +14,10 @@
 		301FD3FA2AA0A78F005CB7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301FD3F92AA0A78F005CB7B6 /* Assets.xcassets */; };
 		301FD3FD2AA0A78F005CB7B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301FD3FB2AA0A78F005CB7B6 /* LaunchScreen.storyboard */; };
 		301FD4082AA0A78F005CB7B6 /* GHPocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FD4072AA0A78F005CB7B6 /* GHPocTests.swift */; };
-		301FD4122AA0A78F005CB7B6 /* GHPocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FD4112AA0A78F005CB7B6 /* GHPocUITests.swift */; };
-		301FD4142AA0A78F005CB7B6 /* GHPocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FD4132AA0A78F005CB7B6 /* GHPocUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		301FD4042AA0A78F005CB7B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 301FD3E52AA0A78D005CB7B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 301FD3EC2AA0A78D005CB7B6;
-			remoteInfo = GHPoc;
-		};
-		301FD40E2AA0A78F005CB7B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 301FD3E52AA0A78D005CB7B6 /* Project object */;
 			proxyType = 1;
@@ -46,9 +37,6 @@
 		301FD3FE2AA0A78F005CB7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301FD4032AA0A78F005CB7B6 /* GHPocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHPocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		301FD4072AA0A78F005CB7B6 /* GHPocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHPocTests.swift; sourceTree = "<group>"; };
-		301FD40D2AA0A78F005CB7B6 /* GHPocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHPocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		301FD4112AA0A78F005CB7B6 /* GHPocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHPocUITests.swift; sourceTree = "<group>"; };
-		301FD4132AA0A78F005CB7B6 /* GHPocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHPocUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		301FD40A2AA0A78F005CB7B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				301FD3EF2AA0A78D005CB7B6 /* GHPoc */,
 				301FD4062AA0A78F005CB7B6 /* GHPocTests */,
-				301FD4102AA0A78F005CB7B6 /* GHPocUITests */,
 				301FD3EE2AA0A78D005CB7B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				301FD3ED2AA0A78D005CB7B6 /* GHPoc.app */,
 				301FD4032AA0A78F005CB7B6 /* GHPocTests.xctest */,
-				301FD40D2AA0A78F005CB7B6 /* GHPocUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				301FD4072AA0A78F005CB7B6 /* GHPocTests.swift */,
 			);
 			path = GHPocTests;
-			sourceTree = "<group>";
-		};
-		301FD4102AA0A78F005CB7B6 /* GHPocUITests */ = {
-			isa = PBXGroup;
-			children = (
-				301FD4112AA0A78F005CB7B6 /* GHPocUITests.swift */,
-				301FD4132AA0A78F005CB7B6 /* GHPocUITestsLaunchTests.swift */,
-			);
-			path = GHPocUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 301FD4032AA0A78F005CB7B6 /* GHPocTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		301FD40C2AA0A78F005CB7B6 /* GHPocUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 301FD41D2AA0A78F005CB7B6 /* Build configuration list for PBXNativeTarget "GHPocUITests" */;
-			buildPhases = (
-				301FD4092AA0A78F005CB7B6 /* Sources */,
-				301FD40A2AA0A78F005CB7B6 /* Frameworks */,
-				301FD40B2AA0A78F005CB7B6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				301FD40F2AA0A78F005CB7B6 /* PBXTargetDependency */,
-			);
-			name = GHPocUITests;
-			productName = GHPocUITests;
-			productReference = 301FD40D2AA0A78F005CB7B6 /* GHPocUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					301FD4022AA0A78F005CB7B6 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 301FD3EC2AA0A78D005CB7B6;
-					};
-					301FD40C2AA0A78F005CB7B6 = {
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = 301FD3EC2AA0A78D005CB7B6;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				301FD3EC2AA0A78D005CB7B6 /* GHPoc */,
 				301FD4022AA0A78F005CB7B6 /* GHPocTests */,
-				301FD40C2AA0A78F005CB7B6 /* GHPocUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		301FD4012AA0A78F005CB7B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		301FD40B2AA0A78F005CB7B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		301FD4092AA0A78F005CB7B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				301FD4142AA0A78F005CB7B6 /* GHPocUITestsLaunchTests.swift in Sources */,
-				301FD4122AA0A78F005CB7B6 /* GHPocUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = 301FD3EC2AA0A78D005CB7B6 /* GHPoc */;
 			targetProxy = 301FD4042AA0A78F005CB7B6 /* PBXContainerItemProxy */;
-		};
-		301FD40F2AA0A78F005CB7B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 301FD3EC2AA0A78D005CB7B6 /* GHPoc */;
-			targetProxy = 301FD40E2AA0A78F005CB7B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,42 +452,6 @@
 			};
 			name = Release;
 		};
-		301FD41E2AA0A78F005CB7B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4Z7D3ZYGPN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sk.GHPocUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GHPoc;
-			};
-			name = Debug;
-		};
-		301FD41F2AA0A78F005CB7B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4Z7D3ZYGPN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sk.GHPocUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GHPoc;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,15 +478,6 @@
 			buildConfigurations = (
 				301FD41B2AA0A78F005CB7B6 /* Debug */,
 				301FD41C2AA0A78F005CB7B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		301FD41D2AA0A78F005CB7B6 /* Build configuration list for PBXNativeTarget "GHPocUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				301FD41E2AA0A78F005CB7B6 /* Debug */,
-				301FD41F2AA0A78F005CB7B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
