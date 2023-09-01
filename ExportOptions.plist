@@ -8,8 +8,8 @@
  <string>ad-hoc</string>
  <key>provisioningProfiles</key>
  <dict>
-  <key>com.sk.GHPocTests</key>
-  <string>Test GitHub Actions Dist</string>
+  <key>com.sk.GHPoc.testapp</key>
+  <string>GHACTIONS</string>
  </dict>
  <key>signingCertificate</key>
  <string>Apple Distribution</string>
