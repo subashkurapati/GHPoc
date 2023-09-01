@@ -5,7 +5,7 @@
  <key>destination</key>
  <string>export</string>
  <key>method</key>
- <string>adhoc</string>
+ <string>ad-hoc</string>
  <key>provisioningProfiles</key>
  <dict>
   <key>com.sk.GHPocTests</key>
