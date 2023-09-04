@@ -1,4 +1,4 @@
-name: Archive and export
+name: Fastlane Tests
 
 on:
   push:
