@@ -20,5 +20,4 @@ platform :ios do
   lane :tests do
     # add actions here: https://docs.fastlane.tools/actions
     run_tests(scheme: "GHPocTests"
-  end
 end
