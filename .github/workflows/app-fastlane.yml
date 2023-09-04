@@ -1,0 +1,30 @@
+name: Archive and export
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+jobs:
+  build:
+    runs-on: [macos-latest]
+    env:
+      XC_VERSION: ${{ '14.0.1' }}
+      XC_SCHEME: ${{ 'GHPoc' }}
+      XC_CONFIGURATION: ${{ 'Automation' }}
+      XC_WORKSPACE: ${{ 'GHPoc.xcodeproj' }}
+      XC_ARCHIVE_PATH: ${{ './GHPoc.xcarchive' }}
+      XC_EXPORT_PATH: ${{ './artifacts/' }}
+      XC_EXPORT_OPTIONS_FILE_PATH: ${{ './ExportOptions.plist' }}
+      ENCRYPTED_CERTS_FILE_PATH: ${{ './certs.p12.gpg' }}
+      DECRYPTED_CERTS_FILE_PATH: ${{ './certs.p12' }}
+      ENCRYPTED_PROVISION_FILE_PATH: ${{ './provisioning.tar.gz.gpg' }}
+      DECRYPTED_PROVISION_FILE_PATH: ${{ './provisioning.tar.gz' }}
+      CERTS_ENCRYPTION_PWD: ${{ secrets.CERTS_ENCRYPT_PWD }}
+      PROVISION_ENCRYPTION_PWD: ${{ secrets.PROVISION_ENCRYPT_PWD }}
+      CERTS_EXPORT_PWD: ${{ secrets.CERTS_EXPORT_PWD }}
+      KEYCHAIN: ${{ 'test.keychain' }}
+    steps:
+    - uses: actions/checkout@v2
+    - run: fastlane tests
