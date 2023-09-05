@@ -21,4 +21,9 @@ platform :ios do
     # add actions here: https://docs.fastlane.tools/actions
     run_tests(scheme: "GHPocTests")
   end
+  lane :buildApp do
+    get_certificates
+    get_provisioning_profile
+    buildApp(scheme: "GHPoc")
+  end
 end
