@@ -22,7 +22,10 @@ platform :ios do
     run_tests(scheme: "GHPocTests")
   end
   lane :buildApp do
-    get_certificates
+    get_certificates(
+      development: true,
+      username: "kv.tarun.subash@equalexperts.com"
+    )
     get_provisioning_profile
     buildApp(scheme: "GHPoc")
   end
